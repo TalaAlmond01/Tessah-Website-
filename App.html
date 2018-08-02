@@ -1,0 +1,334 @@
+<html>
+<head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Unicase');
+body{
+background-color: #ADBCA5;
+font-family: 'Cormorant Unicase', serif;
+}
+.content-box{
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+}
+
+h1{
+  text-align: center;
+  font-size: 50;
+
+}
+.section{
+  border-style: dotted;
+  margin: 0 auto;
+  width: 60%;
+  border-width: 7.5px;
+  border-color: #F1BF98;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px
+
+}
+
+#Modern{
+  background-color: #717568;
+  /* width: 100%; */
+
+}
+
+#Historical{
+  background-color: #B07156;
+
+}
+
+#buttons a{
+width: 25%;
+padding: 10px;
+margin-bottom: 5px;
+text-align: center;
+text-decoration: none;
+border-radius: 4px;
+}
+
+#munn {
+  width: 35%;
+}
+#sean {
+  width: 35%;
+}
+#lin {
+  width: 35%;
+}
+#smith {
+  width: 35%;
+}
+#theron {
+  width: 35%;
+}
+#jen {
+  width: 35%;
+}
+#dragon {
+  width: 35%;
+}
+#hope {
+  width: 35%;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-around;
+}
+#nelson{
+  width: 35%
+}
+#heston{
+  width: 35%
+}
+#marilyn{
+  width: 35%
+}
+#elvis{
+  width: 35%
+}
+#bob{
+  width: 35%
+}
+#grace{
+  width: 35%
+}
+#farrah{
+  width: 35%
+}
+#maya{
+  width: 35%
+}
+
+
+</style>
+<div class="section">
+<h1><strong> Can you Name that Person? </strong></h1>
+</div>
+<div class="section">
+<h2> How to Play: Click a name through the drop box for each person, then click the CHECK box to check your answers!</h2>
+</div>
+<div class="section" id="buttons">
+<a onclick="showModernFamousPeople()"> Modern</a>
+<a onclick="showHistoricalFamousPeople()">Historical</a>
+</div>
+<div class="content-box" >
+  <div id="Modern" class="section">
+  <p> Welcome! Can you guess who each person is?</p>
+<div class="flex">
+  <img src= "1529595064227.jpg" id="munn"/>
+  <select id="munn">
+    <option value="G-dragon">G-dragon</option>
+    <option value="J-hope">J-hope</option>
+    <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
+    <option value="Charlize Theron">Charlize Theron</option>
+    <option value="Jorja Smith ">Jorja Smith</option>
+    <option value="Jennifer Lawrence">Jennifer Lawrence</option>
+    <option value="Olivia Munn">Olivia Munn</option>
+    <option value="Big Sean ">Big Sean</option>
+  </select>
+  <img src= "01-big-sean.w710.h473.2x.jpg" id="sean"/>
+  <select id="sean">
+    <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
+    <option value="Big Sean">Big Sean</option>
+    <option value="G-dragon">G-dragon</option>
+    <option value="Jorja Smith">Jorja Smith</option>
+    <option value="J-hope">J-hope</option>
+    <option value="Jennifer Lawrence">Jennifer Lawrence</option>
+    <option value="Olivia Munn">Olivia Munn</option>
+    <option value="Charlize Theron">Charlize Theron </option>
+  </select>
+  <img src= "15-lin-manuel-miranda.w710.h473.2x.jpg" id="lin"/>
+  <select id="lin">
+    <option value="Jennifer Lawrence">Jennifer Lawrence</option>
+    <option value="Big Sean">Big Sean</option>
+    <option value="G-dragon">G-dragon</option>
+    <option value="J-hope">J-hope</option>
+    <option value="Charlize Theron">Charlize Theron</option>
+    <option value="Olivia Munn">Jennifer Lawrence</option>
+    <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
+    <option value="Jorja Smith">Jorja Smith</option>
+  </select>
+  <img src= "Jorjasmithhhh.jpg" id="smith"/>
+  <select id="smith">
+    <option value="J-hope">J-hope</option>
+    <option value="Jorja Smith">Jorja Smith</option>
+    <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
+    <option value="Big Sean">Big Sean</option>
+    <option value="Charlize Theron">Charlize Theron</option>
+    <option value="Jennifer Lawrence">Jennifer Lawrence</option>
+    <option value="G-dragon">G-dragon</option>
+    <option value="Olivia Munn">Olivia Munn</option>
+  </select>
+  <img src= "63878952.jpg" id="theron"/>
+  <select id="theron">
+    <option value="Jorja Smith">Jorja Smith</option>
+    <option value="Jennifer Lawrence">Jennifer Lawrence</option>
+    <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
+    <option value="Olivia Munn">Olivia Munn</option>
+    <option value="Charlize Theron">Charlize Theron</option>
+    <option value="Big Sean">Big Sean</option>
+    <option value="J-hope">J-hope</option>
+    <option value="G-dragon">G-dragon</option>
+  </select>
+  <img src= "Jennifer_lawrence_gettyimages_862154582.jpg" id="jen"/>
+  <select id="jen">
+    <option value="Big Sean">Big Sean</option>
+    <option value="Olivia Munn">Olivia Munn</option>
+    <option value="Charlize Theron">Charlize Theron</option>
+    <option value="J-hope">J-hope</option>
+    <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
+    <option value="Jennifer Lawrence">Jennifer Lawrence</option>
+    <option value="G-dragon">G-dragon</option>
+    <option value="Jorja Smith">Jorja Smith</option>
+  </select>
+  <img src= "G-dragon-2.jpg" id="dragon"/>
+  <select id="dragon">
+    <option value="Charlize Theron">Charlize Theron</option>
+    <option value="J-hope">J-hope</option>
+    <option value="G-dragon">G-dragon</option>
+    <option value="Jorja Smith">Jorja Smith</option>
+    <option value="Big Sean">Big Sean</option>
+    <option value="Jennifer Lawrence">Jennifer Lawrence</option>
+    <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
+    <option value="Olivia Munn">Olivia Munn</option>
+  </select>
+  <img src= "BTS-NAVER-x-DISPATCH-2018-bts-41383687-500-333.jpg" id="hope"/>
+  <select id="hope">
+    <option value="Olivia Munn">Olivia Munn</option>
+    <option value="Jorja Smith">Jorja Smith</option>
+    <option value="J-hope">J-hope</option>
+    <option value="Big Sean">Big Sean</option>
+    <option value="Charlize Theron">Charlize Theron</option>
+    <option value="Jennifer Lawrence">Jennifer Lawrence</option>
+    <option value="G-dragon">G-dragon</option>
+    <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
+  </select>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+
+<div class="content-box">
+  <div id="Historical" class="section">
+  <p>Welcome! Can you guess who each person is?</p>
+  <div class="flex">
+  <img src= "Mandela-Nelson.png" id="nelson"/>
+  <select id="nelson">
+    <option value="Maya Angelou">Maya Angelou</option>
+    <option value="Charlton Heston">Charlton Heston</option>
+    <option value="Grace Kelly">Grace Kelly</option>
+    <option value="Farrah Fawcett">Farrah Fawcett</option>
+    <option value="Bob Marley">Bob Marley</option>
+    <option value="Marilyn Monroe">Marilyn Monroe</option>
+    <option value="Elvis Presley">Elvis Presley</option>
+    <option value="Nelson Mandela">Nelson Mandela</option>
+  </select>
+  <img src= "Charlton_Heston_Civil_Rights_March_1963.jpg" id="heston" />
+  <select id="heston">
+    <option value="Nelson Mandela">Nelson Mandela</option>
+    <option value="Grace Kelly">Charlton Heston</option>
+    <option value="Maya Angelou">Maya Angelou</option>
+    <option value="Elvis Presley">Elvis Presley</option>
+    <option value="Bob Marley">Bob Marley</option>
+    <option value="Charlton Heston">Charlton Heston</option>
+    <option value="Farrah Fawcett">Farrah Fawcett</option>
+    <option value="Marilyn Monroe">Marilyn Monroe</option>
+  </select>
+  <img src= "marilyn-monroe-beauty-look1.jpg" id="marilyn" />
+  <select id="marilyn">
+    <option value="Grace Kelly">Grace Kelly</option>
+    <option value="Farrah Fawcett">Farrah Fawcett/option>
+    <option value="Marilyn Monroe">Marilyn Monroe</option>
+    <option value="Maya Angelou">Maya Angelou</option>
+    <option value="Bob Marley">Bob Marley</option>
+    <option value="Nelson Mandela">Nelson Mandela</option>
+    <option value="Charlton Heston">Charlton Heston</option>
+    <option value="Elvis Presley">Elvis Presley</option>
+  </select>
+  <img src= "Elvis-Presley-on-the-Set-of-King-Creole-billboard-1548.jpg" id="elvis" />
+  <select id="elvis">
+    <option value="Charlton Heston">Charlton Heston</option>
+    <option value="Nelson Mandela">Nelson Mandela</option>
+    <option value="Bob Marley">Bob Marley</option>
+    <option value="Elvis Presley">Elvis Presley</option>
+    <option value="Marilyn Monroe">Marilyn Monroe</option>
+    <option value="Grace Kelly">Grace Kelly</option>
+    <option value="Farrah Fawcett">Farrah Fawcett</option>
+    <option value="Maya Angelou">Maya Angelou</option>
+  </select>
+  <img src= "Bobmarley.jpg" id="bob" />
+  <select id="bob">
+    <option value="Farrah Fawcett">Farrah Fawcett</option>
+    <option value="Elvis Presley">Elvis Presley</option>
+    <option value="Marilyn Monroe">Marilyn Monroe</option>
+    <option value="Charlton Heston">Charlton Heston</option>
+    <option value="Bob Marley">Bob Marley</option>
+    <option value="Maya Angelou">Maya Angelou</option>
+    <option value="Nelson Mandela">Nelson Mandela</option>
+    <option value="Grace Kelly">Grace Kelly</option>
+  </select>
+  <img src= "Grace-kelly-9362226-1-402.jpg" id="grace" />
+  <select id="grace">
+    <option value="Elvis Presley">Elvis Presley</option>
+    <option value="Farrah Fawcett">Farrah Fawcett</option>
+    <option value="Marilyn Monroe">Marilyn Monroe</option>
+    <option value="Nelson Mandela">Nelson Mandela</option>
+    <option value="Bob Marley">Bob Marley</option>
+    <option value="Grace Kelly">Grace Kelly</option>
+    <option value="Charlton Heston">Charlton Heston</option>
+    <option value="Maya Angelou">Maya Angelou</option>
+  </select>
+  <img src= "farrahfawcett.jpg" id="farrah" />
+  <select id="farrah">
+    <option value="Bob Marley">Bob Marley</option>
+    <option value="Maya Angelou">Maya Angelou</option>
+    <option value="Marilyn Monroe">Marilyn Monroe</option>
+    <option value="Elvis Presley">Elvis Presley</option>
+    <option value="Nelson Mandela">Nelson Mandela</option>
+    <option value="Grace Kelly">Grace Kelly</option>
+    <option value="Farrah Fawcett">Farrah Fawcett</option>
+    <option value="Charlton Heston">Charlton Heston</option>
+  </select>
+  <img src= "MayaAngelouFeature-1.jpg" id="maya" />
+  <select id="maya">
+    <option value="Marilyn Monroe">Marilyn Monroe</option>
+    <option value="Charlton Heston">Charlton Heston</option>
+    <option value="Nelson Mandela">Nelson Mandela</option>
+    <option value="Grace Kelly">Grace Kelly</option>
+    <option value="Farrah Fawcett">Farrah Fawcett</option>
+    <option value="Elvis Presley">Elvis Presley</option>
+    <option value="Bob Marley">Bob Marley</option>
+    <option value="Maya Angelou">Maya Angelou</option>
+  </select>
+</div>
+</div>
+
+<script>
+
+var Modern = document.getElementById("Modern");
+var Historical = document.getElementById("Historical");
+
+function showModernFamousPeople(){
+  Modern.style.visibility = "visible";
+  Historical.style.visibility = "hidden";
+
+}
+
+function showHistoricalFamousPeople(){
+  Historical.style.visibility = "visible";
+  Modern.style.visibility = "hidden";
+
+
+}
+
+</script>
