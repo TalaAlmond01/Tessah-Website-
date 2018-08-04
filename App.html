@@ -40,15 +40,23 @@ h1{
 
 }
 
-#buttons a{
-width: 25%;
+#buttons {
 padding: 10px;
-margin-bottom: 5px;
-text-align: center;
+margin-bottom: 15px;
 text-decoration: none;
 border-radius: 4px;
+margin-top: 10px;
+text-align: center;
+display: flex;
+justify-content: space-around;
+font-size: 25px;
 }
+#buttons{
 
+}
+select {
+  width: 50%;
+}
 #munn {
   width: 35%;
 }
@@ -104,14 +112,36 @@ border-radius: 4px;
 #maya{
   width: 35%
 }
+#modernbutton{
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
 
+}
+#historicalbutton{
+  display: block;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+#video{
+  position: absolute;
+  top: -1000px;
+}
 
 </style>
+<div data-video="ihc7Y1HQ7Cg"
+        data-autoplay="1"
+        data-loop="1"
+        id="youtube-audio">
+ </div>
+ <!-- <video type= "video/youtube" src="https://www.youtube.com/embed/ihc7Y1HQ7Cg" autoplay controls loop ></video> -->
+ <iframe id="video" width="806" height="453" src="https://www.youtube.com/embed/ihc7Y1HQ7Cg?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 <div class="section">
 <h1><strong> Can you Name that Person? </strong></h1>
 </div>
 <div class="section">
-<h2> How to Play: Click a name through the drop box for each person, then click the CHECK box to check your answers!</h2>
+<h2> How to Play: Try to guess each person's name by selecting a name through the drop box for each person, then click the <strong>CHECK</strong> box to check your answers!</h2>
 </div>
 <div class="section" id="buttons">
 <a onclick="showModernFamousPeople()"> Modern</a>
@@ -122,7 +152,7 @@ border-radius: 4px;
   <p> Welcome! Can you guess who each person is?</p>
 <div class="flex">
   <img src= "1529595064227.jpg" id="munn"/>
-  <select id="munn">
+  <select id="munnselector">
     <option value="G-dragon">G-dragon</option>
     <option value="J-hope">J-hope</option>
     <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
@@ -133,7 +163,7 @@ border-radius: 4px;
     <option value="Big Sean ">Big Sean</option>
   </select>
   <img src= "01-big-sean.w710.h473.2x.jpg" id="sean"/>
-  <select id="sean">
+  <select id="seanselector">
     <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
     <option value="Big Sean">Big Sean</option>
     <option value="G-dragon">G-dragon</option>
@@ -144,7 +174,7 @@ border-radius: 4px;
     <option value="Charlize Theron">Charlize Theron </option>
   </select>
   <img src= "15-lin-manuel-miranda.w710.h473.2x.jpg" id="lin"/>
-  <select id="lin">
+  <select id="linselector">
     <option value="Jennifer Lawrence">Jennifer Lawrence</option>
     <option value="Big Sean">Big Sean</option>
     <option value="G-dragon">G-dragon</option>
@@ -155,7 +185,7 @@ border-radius: 4px;
     <option value="Jorja Smith">Jorja Smith</option>
   </select>
   <img src= "Jorjasmithhhh.jpg" id="smith"/>
-  <select id="smith">
+  <select id="smithselector">
     <option value="J-hope">J-hope</option>
     <option value="Jorja Smith">Jorja Smith</option>
     <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
@@ -166,7 +196,7 @@ border-radius: 4px;
     <option value="Olivia Munn">Olivia Munn</option>
   </select>
   <img src= "63878952.jpg" id="theron"/>
-  <select id="theron">
+  <select id="theronselector">
     <option value="Jorja Smith">Jorja Smith</option>
     <option value="Jennifer Lawrence">Jennifer Lawrence</option>
     <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
@@ -177,7 +207,7 @@ border-radius: 4px;
     <option value="G-dragon">G-dragon</option>
   </select>
   <img src= "Jennifer_lawrence_gettyimages_862154582.jpg" id="jen"/>
-  <select id="jen">
+  <select id="jenselector">
     <option value="Big Sean">Big Sean</option>
     <option value="Olivia Munn">Olivia Munn</option>
     <option value="Charlize Theron">Charlize Theron</option>
@@ -188,7 +218,7 @@ border-radius: 4px;
     <option value="Jorja Smith">Jorja Smith</option>
   </select>
   <img src= "G-dragon-2.jpg" id="dragon"/>
-  <select id="dragon">
+  <select id="dragonselector">
     <option value="Charlize Theron">Charlize Theron</option>
     <option value="J-hope">J-hope</option>
     <option value="G-dragon">G-dragon</option>
@@ -199,7 +229,7 @@ border-radius: 4px;
     <option value="Olivia Munn">Olivia Munn</option>
   </select>
   <img src= "BTS-NAVER-x-DISPATCH-2018-bts-41383687-500-333.jpg" id="hope"/>
-  <select id="hope">
+  <select id="hopeselector">
     <option value="Olivia Munn">Olivia Munn</option>
     <option value="Jorja Smith">Jorja Smith</option>
     <option value="J-hope">J-hope</option>
@@ -210,6 +240,7 @@ border-radius: 4px;
     <option value="Lin Manuel Miranda">Lin Manuel Miranda</option>
   </select>
 </div>
+<button id="modernbutton" onclick="submitModern()"> Check your answers! </button>
 </div>
 
 
@@ -223,7 +254,7 @@ border-radius: 4px;
   <p>Welcome! Can you guess who each person is?</p>
   <div class="flex">
   <img src= "Mandela-Nelson.png" id="nelson"/>
-  <select id="nelson">
+  <select id="nelsonselector">
     <option value="Maya Angelou">Maya Angelou</option>
     <option value="Charlton Heston">Charlton Heston</option>
     <option value="Grace Kelly">Grace Kelly</option>
@@ -234,7 +265,7 @@ border-radius: 4px;
     <option value="Nelson Mandela">Nelson Mandela</option>
   </select>
   <img src= "Charlton_Heston_Civil_Rights_March_1963.jpg" id="heston" />
-  <select id="heston">
+  <select id="hestonselector">
     <option value="Nelson Mandela">Nelson Mandela</option>
     <option value="Grace Kelly">Charlton Heston</option>
     <option value="Maya Angelou">Maya Angelou</option>
@@ -245,7 +276,7 @@ border-radius: 4px;
     <option value="Marilyn Monroe">Marilyn Monroe</option>
   </select>
   <img src= "marilyn-monroe-beauty-look1.jpg" id="marilyn" />
-  <select id="marilyn">
+  <select id="marilynselector">
     <option value="Grace Kelly">Grace Kelly</option>
     <option value="Farrah Fawcett">Farrah Fawcett/option>
     <option value="Marilyn Monroe">Marilyn Monroe</option>
@@ -256,7 +287,7 @@ border-radius: 4px;
     <option value="Elvis Presley">Elvis Presley</option>
   </select>
   <img src= "Elvis-Presley-on-the-Set-of-King-Creole-billboard-1548.jpg" id="elvis" />
-  <select id="elvis">
+  <select id="elvisselector">
     <option value="Charlton Heston">Charlton Heston</option>
     <option value="Nelson Mandela">Nelson Mandela</option>
     <option value="Bob Marley">Bob Marley</option>
@@ -267,7 +298,7 @@ border-radius: 4px;
     <option value="Maya Angelou">Maya Angelou</option>
   </select>
   <img src= "Bobmarley.jpg" id="bob" />
-  <select id="bob">
+  <select id="bobselector">
     <option value="Farrah Fawcett">Farrah Fawcett</option>
     <option value="Elvis Presley">Elvis Presley</option>
     <option value="Marilyn Monroe">Marilyn Monroe</option>
@@ -278,7 +309,7 @@ border-radius: 4px;
     <option value="Grace Kelly">Grace Kelly</option>
   </select>
   <img src= "Grace-kelly-9362226-1-402.jpg" id="grace" />
-  <select id="grace">
+  <select id="graceselector">
     <option value="Elvis Presley">Elvis Presley</option>
     <option value="Farrah Fawcett">Farrah Fawcett</option>
     <option value="Marilyn Monroe">Marilyn Monroe</option>
@@ -289,7 +320,7 @@ border-radius: 4px;
     <option value="Maya Angelou">Maya Angelou</option>
   </select>
   <img src= "farrahfawcett.jpg" id="farrah" />
-  <select id="farrah">
+  <select id="farrahselector">
     <option value="Bob Marley">Bob Marley</option>
     <option value="Maya Angelou">Maya Angelou</option>
     <option value="Marilyn Monroe">Marilyn Monroe</option>
@@ -300,7 +331,7 @@ border-radius: 4px;
     <option value="Charlton Heston">Charlton Heston</option>
   </select>
   <img src= "MayaAngelouFeature-1.jpg" id="maya" />
-  <select id="maya">
+  <select id="mayaselector">
     <option value="Marilyn Monroe">Marilyn Monroe</option>
     <option value="Charlton Heston">Charlton Heston</option>
     <option value="Nelson Mandela">Nelson Mandela</option>
@@ -311,7 +342,10 @@ border-radius: 4px;
     <option value="Maya Angelou">Maya Angelou</option>
   </select>
 </div>
+<button id="historicalbutton" onclick="submitHistorical()"> Check your answers! </button>
 </div>
+
+
 
 <script>
 
@@ -330,5 +364,91 @@ function showHistoricalFamousPeople(){
 
 
 }
+function submitModern(){
+  var score = 0
+  var Olivia = document.getElementById("munnselector").value
+  if(Olivia == "Olivia Munn"){
+    score = score + 1;
+  }
+
+  var sean = document.getElementById("seanselector").value
+  if(sean == "Big Sean"){
+    score = score + 1;
+  }
+  var lin = document.getElementById("linselector").value
+  if(lin == "Lin Manuel Miranda"){
+    score = score + 1;
+  }
+
+
+  var jorja = document.getElementById("smithselector").value
+  if(jorja == "Jorja Smith"){
+      score = score + 1;
+    }
+
+  var charlize = document.getElementById("theronselector").value
+  if(charlize == "Charlize Theron"){
+        score = score + 1;
+      }
+
+  var jen = document.getElementById("jenselector").value
+  if(jen == "Jennifer Lawrence"){
+          score = score + 1;
+        }
+
+          var dragon = document.getElementById("dragonselector").value
+          if(dragon == "G-dragon"){
+            score = score + 1;
+          }
+
+            var hope = document.getElementById("hopeselector").value
+            if(hope == "J-hope"){
+              score = score + 1;
+            }
+
+  alert("You got " + score + " correct")
+          }
+
+function submitHistorical(){
+  var score = 0
+  var nelson = document.getElementById("nelsonselector").value
+  if(nelson == "Nelson Mandela"){
+  score = score + 1;
+    }
+  var heston = document.getElementById("hestonselector").value
+  if(heston == "Charlton Heston"){
+    score = score + 1;
+      }
+  var monroe = document.getElementById("marilynselector").value
+  if(monroe == "Marilyn Monroe"){
+    score = score + 1;
+        }
+  var elvis = document.getElementById("elvisselector").value
+  if(elvis == "Elvis Presley"){
+    score = score + 1;
+          }
+var bob = document.getElementById("bobselector").value
+if(bob == "Bob Marley"){
+  score = score + 1;
+            }
+var grace = document.getElementById("graceselector").value
+if(grace  == "Grace Kelly"){
+  score = score + 1;
+              }
+var farrah = document.getElementById("farrahselector").value
+if(farrah  == "Farrah Fawcett"){
+  score = score + 1;
+              }
+var maya = document.getElementById("mayaselector").value
+if(maya  == "Maya Angelou"){
+  score = score + 1;
+              }
+
+
+
+  alert("You got " + score + " correct")
+}
+
+
 
 </script>
